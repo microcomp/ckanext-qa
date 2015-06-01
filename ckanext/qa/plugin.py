@@ -7,10 +7,14 @@ import ckan.lib.dictization.model_dictize as model_dictize
 import ckan.model as model
 import ckan.plugins as p
 import ckan.lib.celery_app as celery_app
+import reports
 
 resource_dictize = model_dictize.resource_dictize
 send_task = celery_app.celery.send_task
 
+
+def dataset_rating(context, dataset_dict):
+    return reports.five_stars(dataset_dict.get('package_id', None))
 
 class QAPlugin(p.SingletonPlugin):
 
@@ -20,7 +24,11 @@ class QAPlugin(p.SingletonPlugin):
     p.implements(p.IDomainObjectModification, inherit=True)
     p.implements(p.IResourceUrlChange)
     p.implements(p.ITemplateHelpers)
+    p.implements(p.IActions, inherit=False)
 
+    def get_actions(self):
+        return {'get_dataset_rating' : dataset_rating}
+    
     def configure(self, config):
         self.site_url = config.get('ckan.site_url')
 

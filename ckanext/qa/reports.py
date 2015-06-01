@@ -1,3 +1,4 @@
+import logging
 from collections import namedtuple
 from sqlalchemy import or_, and_
 import ckan.model as model
@@ -6,6 +7,7 @@ import ckan.lib.dictization.model_dictize as model_dictize
 
 resource_dictize = model_dictize.resource_dictize
 
+log = logging.getLogger(__name__)
 
 def five_stars(id=None):
     """
@@ -14,9 +16,11 @@ def five_stars(id=None):
     Each dict is of the form:
         {'name': <string>, 'title': <string>, 'openness_score': <int>}
     """
+    log.info('id: %s', id)
     if id:
         pkg = model.Package.get(id)
         if not pkg:
+            log.info('rating package not found')
             return "Not found"
 
     # take the maximum openness score among dataset resources to be the
