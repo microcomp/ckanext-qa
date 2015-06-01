@@ -3,7 +3,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
 
-  <py:def function="page_title">Quality Assurance</py:def>
+  <py:def function="page_title"> {{ _('Quality Assurance') }}</py:def>
 
   <py:def function="body_class">hide-sidebar</py:def>
 
@@ -16,14 +16,14 @@
     <div class="qa-content">
     <py:if test='c.organisation.packages'>
     <h1>${c.organisation.title}</h1>
-    <h4>Download this report.</h4>
+    <h4>{{ _('Download this report') }}.</h4>
     <ul>
-        <li>${h.link_to('Report in CSV format', h.url_for(controller='ckanext.qa.controller:QAController', action='broken_resource_links_by_dataset_for_organisation', id=c.id, format='csv'))}</li>
+        <li>${h.link_to({{ _('Report in CSV format') }}, h.url_for(controller='ckanext.qa.controller:QAController', action='broken_resource_links_by_dataset_for_organisation', id=c.id, format='csv'))}</li>
     </ul>
     <table class="qa-table">
       <tr>
-          <th class="qa-table-name">Dataset</th>
-          <th class="qa-table-resources">Resources</th>
+          <th class="qa-table-name">{{ _('Dataset') }}</th>
+          <th class="qa-table-resources">{{ _('Resources') }}</th>
       </tr>
       <tr py:for="package, resources in c.organisation.packages.items()">
           <td>${h.link_to(package[0], h.url_for(controller='package', action='read', id=package[0]))}</td>
@@ -44,7 +44,7 @@
 
     </py:if>
     <py:if test="not (c.organisation.packages and c.organisation.packages.items())">
-    <p>No results found for this organization.</p>
+    <p>{{ _('No results found for this organization') }}.</p>
     </py:if>
 
     </div>

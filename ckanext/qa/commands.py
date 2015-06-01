@@ -77,7 +77,8 @@ class QACommand(p.toolkit.CkanCommand):
                 for resource in package.get('resources', []):
                     resource['package'] = package['name']
                     pkg = model.Package.get(package['id'])
-                    resource['is_open'] = pkg.isopen()
+                    #resource['is_open'] = pkg.isopen()
+                    resource['is_open'] = True
                     data = json.dumps(resource) 
                     task_id = make_uuid()
                     task_status = {

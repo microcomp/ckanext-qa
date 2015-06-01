@@ -121,7 +121,8 @@ class QAPlugin(p.SingletonPlugin):
 
         related_packages = resource.related_packages()
         if related_packages:
-            resource_dict['is_open'] = related_packages[0].isopen()
+            #resource_dict['is_open'] = related_packages[0].isopen()
+            resource_dict['is_open'] = True
 
         data = json.dumps(resource_dict)
 

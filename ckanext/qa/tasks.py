@@ -156,7 +156,6 @@ def update(context, data):
         })
         raise
 
-
 def resource_score(context, data):
     """
     Score resources on Sir Tim Berners-Lee\'s five stars of openness
