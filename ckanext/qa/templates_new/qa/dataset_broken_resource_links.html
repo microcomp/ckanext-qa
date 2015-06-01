@@ -1,7 +1,7 @@
 {% extends "qa/base.html" %}
 
 {% block primary_content %}
-  <h1>{{_('Quality Assurance</h1>
+  <h1>{{_('Quality Assurance')}}</h1>
 
   <p>{{_('Datasets with at least one broken resource.') }}</p>
   <p>{{ h.link_to(_('Report of all broken links by dataset in CSV format'), h.url_for(controller='ckanext.qa.controller:QAController', action='broken_resource_links_by_dataset', format='csv')) }}</p>
