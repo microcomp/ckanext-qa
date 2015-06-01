@@ -1,0 +1,141 @@
+# Slovak translations for ckanext-qa.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the ckanext-qa project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-qa 0.3\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-06-01 15:00+0200\n"
+"PO-Revision-Date: 2015-06-01 15:01+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: sk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/qa/html.py:26
+msgid "Available under an open license."
+msgstr ""
+
+#: ckanext/qa/html.py:27
+msgid "Available as structured data (eg. Excel instead of a scanned table)."
+msgstr ""
+
+#: ckanext/qa/html.py:28
+msgid "Uses non-proprietary formats (e.g., CSV instead of Excel)."
+msgstr ""
+
+#: ckanext/qa/html.py:29
+msgid "Uses URIs to identify things, so that people can link to it."
+msgstr ""
+
+#: ckanext/qa/html.py:30
+msgid "Linked to other data to provide context."
+msgstr ""
+
+#: ckanext/qa/plugin.py:160
+msgid "Not Rated"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:6
+#: ckanext/qa/templates/qa/dataset_broken_resource_links.html:6
+#: ckanext/qa/templates/qa/dataset_broken_resource_links.html:15
+#: ckanext/qa/templates/qa/datasets.html:6
+#: ckanext/qa/templates/qa/five_stars.html:6
+#: ckanext/qa/templates/qa/five_stars.html:15
+#: ckanext/qa/templates/qa/index.html:6 ckanext/qa/templates/qa/index.html:15
+#: ckanext/qa/templates/qa/organisation_broken_resource_links.html:6
+#: ckanext/qa/templates/qa/organisation_broken_resource_links.html:18
+#: ckanext/qa/templates/qa/organisations.html:6
+msgid "Quality Assurance"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:19
+msgid "Download this report"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:21
+msgid "Report in CSV format"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:25
+msgid "Dataset"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:26
+msgid "Resources"
+msgstr ""
+
+#: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:47
+msgid "No results found for this organization"
+msgstr ""
+
+#: ckanext/qa/templates/qa/dataset_broken_resource_links.html:17
+msgid "Datasets with at least one broken resource"
+msgstr ""
+
+#: ckanext/qa/templates/qa/dataset_broken_resource_links.html:38
+msgid "No datasets with at least one broken resource found"
+msgstr ""
+
+#: ckanext/qa/templates/qa/datasets.html:14
+msgid "Package Quality Assurance"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:16
+msgid "Dataset openness scores"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:18
+msgid "A list of all datasets in CKAN, together with their"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:19
+msgid "5 stars of openness rating"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:20
+msgid ""
+"The rating is calculated by looking at the reported mime-type of\n"
+"      each of the datasets resources and calculating the 5 stars of "
+"openness score\n"
+"      for each. The overall dataset score is taken to be the highest "
+"score of any of\n"
+"      the resources"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:27
+msgid "Dataset name"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:28
+msgid "5 Stars of Openness"
+msgstr ""
+
+#: ckanext/qa/templates/qa/five_stars.html:37
+msgid "No QA results found."
+msgstr ""
+
+#: ckanext/qa/templates/qa/organisation_broken_resource_links.html:20
+msgid "Organizations who have published datasets with broken resource links"
+msgstr ""
+
+#: ckanext/qa/templates/qa/organisation_broken_resource_links.html:26
+msgid "Organization name"
+msgstr ""
+
+#: ckanext/qa/templates/qa/organisation_broken_resource_links.html:34
+msgid ""
+"No organizations that have published datasets with broken resource links "
+"found."
+msgstr ""
+
+#: ckanext/qa/templates/qa/organisations.html:14
+msgid "Organisation Quality Assurance"
+msgstr ""
+
