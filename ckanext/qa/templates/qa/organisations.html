@@ -3,7 +3,7 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   py:strip="">
 
-  <py:def function="page_title">Quality Assurance</py:def>
+  <py:def function="page_title">{{_('Quality Assurance') }}</py:def>
 
   <py:def function="optional_head">
     <link type="text/css" rel="stylesheet" media="all" href="/css/ckanext-qa.css" />
@@ -11,9 +11,9 @@
   
 <div py:match="content">
   <div class="qa-content">
-  <h1>Organisation Quality Assurance</h1>
+  <h1>{{_('Organisation Quality Assurance') }}</h1>
   <ul>
-      <li>${h.link_to("Broken resource links", h.url_for(controller='ckanext.qa.controller:QAController', action='broken_resource_links'))}</li>
+      <li>${h.link_to(_("Broken resource links"), h.url_for(controller='ckanext.qa.controller:QAController', action='broken_resource_links'))}</li>
   </ul>
   </div>
 </div>
