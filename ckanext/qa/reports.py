@@ -6,6 +6,7 @@ import ckan.plugins as p
 import ckan.lib.dictization.model_dictize as model_dictize
 
 resource_dictize = model_dictize.resource_dictize
+from sqlalchemy.sql.expression import func
 
 log = logging.getLogger(__name__)
 
@@ -33,6 +34,7 @@ def five_stars(id=None):
         .join(model.Resource)\
         .join(model.TaskStatus, model.TaskStatus.entity_id == model.Resource.id)\
         .filter(model.TaskStatus.key==u'openness_score')\
+        .filter(model.Resource.extras.contains('"status": "public"'))\
         .group_by(model.Package.name, model.Package.title, model.Resource.id, model.TaskStatus.value)\
         .distinct()
 
