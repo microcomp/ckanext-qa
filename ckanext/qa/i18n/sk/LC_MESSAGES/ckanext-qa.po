@@ -69,11 +69,11 @@ msgstr "Hodnotenie kvality"
 
 #: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:19
 msgid "Download this report"
-msgstr "Stiahnuť report"
+msgstr "Stiahnuť tento výpis"
 
 #: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:21
 msgid "Report in CSV format"
-msgstr "Report vo formáte CSV"
+msgstr "Výpis vo formáte CSV"
 
 #: ckanext/qa/templates/qa/broken_resource_links_for_organisation.html:25
 #: ckanext/qa/templates_new/qa/broken_resource_links_for_organisation.html:12
@@ -101,7 +101,7 @@ msgstr "Žiadne datasety s nedostuplným dátovým zdrojom"
 #: ckanext/qa/templates/qa/datasets.html:14
 #: ckanext/qa/templates_new/qa/datasets.html:4
 msgid "Package Quality Assurance"
-msgstr ""
+msgstr "Hodnotenie kvality datasetov"
 
 #: ckanext/qa/templates/qa/five_stars.html:16
 #: ckanext/qa/templates_new/qa/five_stars.html:5
@@ -128,6 +128,12 @@ msgid ""
 "score of any of\n"
 "      the resources"
 msgstr ""
+"Hodnotenie je vypočítané pomocou formátu\n"
+"      každého dátového zdroja datasetu, ktoré určujú 5 hhviezdičkové"
+"hodnotenie kvality\n"
+"      pre každý dátový zdroj. Celkové hodnotenie datasetuje vypočítané ako najvyššie hodnotenie"
+"lubovoľného dátoveho\n"
+"      zdroja"
 
 #: ckanext/qa/templates/qa/five_stars.html:27
 #: ckanext/qa/templates_new/qa/five_stars.html:16
@@ -158,7 +164,9 @@ msgstr "Názov organizácie"
 msgid ""
 "No organizations that have published datasets with broken resource links "
 "found."
-msgstr ""
+msgstr  ""
+"Nenašla sa organizácia, ktorá by vypublikovala nedostupné dátového"
+"zdroje."
 
 #: ckanext/qa/templates/qa/organisations.html:14
 #: ckanext/qa/templates_new/qa/organisations.html:4
@@ -166,10 +174,8 @@ msgid "Organisation Quality Assurance"
 msgstr "Hodnotenie kvality organizácie"
 
 #: ckanext/qa/templates_new/qa/broken_resource_links_for_organisation.html:6
-#, fuzzy
-#| msgid "Download this report"
 msgid "Download this report."
-msgstr "Stiahnuť report"
+msgstr "Stiahnuť tento výpis."
 
 #: ckanext/qa/templates_new/qa/broken_resource_links_for_organisation.html:21
 msgid "URL"
@@ -178,46 +184,36 @@ msgstr ""
 #: ckanext/qa/templates_new/qa/broken_resource_links_for_organisation.html:22
 #: ckanext/qa/templates_new/qa/dataset_broken_resource_links.html:13
 msgid "Reason"
-msgstr ""
+msgstr "Príčina"
 
 #: ckanext/qa/templates_new/qa/broken_resource_links_for_organisation.html:36
-#, fuzzy
-#| msgid "No results found for this organization"
 msgid "No results found for this organization."
 msgstr "Žiadne výsledky pre túto organizáciu"
 
 #: ckanext/qa/templates_new/qa/dataset_broken_resource_links.html:6
-#, fuzzy
-#| msgid "Datasets with at least one broken resource"
 msgid "Datasets with at least one broken resource."
 msgstr "Datasety s aspoň jedným nedostupným dátovým zdrojom"
 
 #: ckanext/qa/templates_new/qa/dataset_broken_resource_links.html:7
 msgid "Report of all broken links by dataset in CSV format"
-msgstr ""
+msgstr "Výpis všetkých nedostupných dátových zdrojov podľa datasetov v CSV formáte"
 
 #: ckanext/qa/templates_new/qa/dataset_broken_resource_links.html:12
-#, fuzzy
-#| msgid "Resources"
 msgid "Resource URL"
-msgstr "Dátové zdroje"
+msgstr "URL dátového zdroja"
 
 #: ckanext/qa/templates_new/qa/dataset_broken_resource_links.html:27
-#, fuzzy
-#| msgid "No datasets with at least one broken resource found"
 msgid "No datasets with at least one broken resource found."
 msgstr "Žiadne datasety s nedostuplným dátovým zdrojom"
 
 #: ckanext/qa/templates_new/qa/datasets.html:6
-#, fuzzy
-#| msgid "5 stars of openness rating"
 msgid "5 stars of openness scores"
 msgstr "5 hviezdičkovým hodnotením otvorenia"
 
 #: ckanext/qa/templates_new/qa/datasets.html:10
 #: ckanext/qa/templates_new/qa/organisations.html:6
 msgid "Broken resource links"
-msgstr ""
+msgstr "Nedostupné dátového zdroje"
 
 #: ckanext/qa/templates_new/qa/five_stars.html:9
 msgid ""
@@ -228,28 +224,28 @@ msgid ""
 " any of\n"
 "  the resources."
 msgstr ""
+"Hodnotenie je vypočítané pomocou formátu\n"
+"      každého dátového zdroja datasetu, ktoré určujú 5 hhviezdičkové"
+"hodnotenie kvality\n"
+"      pre každý dátový zdroj. Celkové hodnotenie datasetuje vypočítané ako najvyššie hodnotenie"
+"lubovoľného dátoveho\n"
+"      zdroja"
 
 #: ckanext/qa/templates_new/qa/index.html:7
-#, fuzzy
-#| msgid "Datasets with at least one broken resource"
 msgid "Datasets with broken resource links"
 msgstr "Datasety s aspoň jedným nedostupným dátovým zdrojom"
 
 #: ckanext/qa/templates_new/qa/index.html:9
-#, fuzzy
-#| msgid "Organizations who have published datasets with broken resource links"
 msgid "Organisations whose datasets contain broken resource links"
 msgstr "Organizácie, ktoré vypublikovali datasety s nedostupnými dátovými zdrojmi"
 
 #: ckanext/qa/templates_new/qa/organisation_broken_resource_links.html:6
-#, fuzzy
-#| msgid "Organizations who have published datasets with broken resource links"
 msgid "Organizations who have published datasets with broken resource links."
 msgstr "Organizácie, ktoré vypublikovali datasety s nedostupnými dátovými zdrojmi"
 
 #: ckanext/qa/templates_new/qa/organisation_broken_resource_links.html:8
 msgid "Report of all broken links by organisation in CSV format"
-msgstr ""
+msgstr "Výpis vsetkých nedostupných dátových zdrojov podľa organizácie v CSV formáte"
 
 #: ckanext/qa/templates_new/qa/snippets/stars_module.html:14
 msgid "Resource Quality"

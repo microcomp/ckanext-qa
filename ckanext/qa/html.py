@@ -1,5 +1,6 @@
 from webhelpers.html import literal
 from ckan.lib.helpers import icon
+import ckan.plugins.toolkit as tk
 
 
 HEAD_CODE = '''
@@ -13,10 +14,10 @@ DL_HTML = '''
 '''
 
 
-def _(x):
+#def _(x):
     # TODO Need to link this to i18n._ but I can't seem to import it?
-    return x
-
+#    return x
+_ = tk._
 
 def get_star_html(stars, reason):
     if stars == 0:
