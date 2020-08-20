@@ -30,7 +30,7 @@ class QAPlugin(p.SingletonPlugin):
         return {'get_dataset_rating' : dataset_rating}
     
     def configure(self, config):
-        self.site_url = config.get('ckan.site_url')
+        self.site_url = config.get('ckan.internal_site_url') or config.get('ckan.site_url')
 
     def update_config(self, config):
         # check if new templates
